@@ -1,0 +1,111 @@
+.company-detail-page {
+    min-height: 100vh;
+    padding: 100px 0 4rem;
+}
+
+.back-link-container {
+    margin-bottom: 2rem;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    transition: color var(--transition-fast);
+}
+
+.back-link:hover {
+    color: var(--color-primary-light);
+    transform: translateX(-4px);
+}
+
+/* Company Header */
+.company-header-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.company-title-section h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.company-meta {
+    display: flex;
+    gap: 1.5rem;
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+}
+
+/* Detail Grid */
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+}
+
+/* Charts */
+.score-breakdown-card {
+    height: 100%;
+}
+
+.chart-container {
+    width: 100%;
+    height: 350px;
+    margin-top: 1rem;
+}
+
+/* Metrics List */
+.metrics-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.metric-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.metric-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.metric-label {
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}
+
+.metric-value {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+}
+
+.metric-sublabel {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin-top: 0.25rem;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .company-header-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
